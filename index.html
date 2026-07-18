@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Qubexe Technology & Solutions | IT & Software Solutions in Qatar</title>
+  <meta name="description" content="Qubexe Technology & Solutions is a leading Qatar-based technology company providing structured cabling, CCTV, access control, smart automation, data centers, and comprehensive IT/Software solutions.">
+  <meta name="keywords" content="IT Solutions Qatar, Software Solutions Doha, Structured Cabling, CCTV Systems Qatar, Smart Home Automation, Access Control, PBX Systems, Data Center Doha">
+  <meta name="author" content="Qubexe Technology & Solutions">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.qubexe.com/">
+  <meta property="og:title" content="Qubexe Technology & Solutions | IT & Software Solutions in Qatar">
+  <meta property="og:description" content="Leading Qatar technology provider. From structured cabling and CCTV to smart home automation and bespoke software services, we deliver a 100% satisfaction guarantee.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.qubexe.com/">
+  <meta property="twitter:title" content="Qubexe Technology & Solutions | IT & Software Solutions in Qatar">
+  <meta property="twitter:description" content="Leading Qatar technology provider. From structured cabling and CCTV to smart home automation and bespoke software services.">
+  <meta property="twitter:image" content="assets/images/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="home">
+    <div class="container navbar-container">
+      <a href="#home" class="logo-link" aria-label="Qubexe Home">
+        <!-- SVG Logo Container -->
+        <div class="logo-wrapper">
+          <img src="assets/logo.png" alt="Qubexe Logo" class="logo-img">
+        </div>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Theme Switcher, Search & Burger Button -->
+      <div class="nav-actions">
+        <button id="searchOpenBtn" class="search-open-btn" aria-label="Open search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="burger-btn" id="burgerBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Open main menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge">Stay Connected With Us</span>
+          <h1 class="hero-title">Think Big.<br><span class="gradient-text">We Make It, Possible!</span></h1>
+          <p class="hero-subtitle">Qubexe Technology & Solutions provides industry-leading IT solutions, custom software engineering, and strategic trading services in Qatar, backed by a 100% satisfaction guarantee.</p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Explore Our Services</a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-carousel" id="heroCarousel">
+            <div class="carousel-inner">
+              <div class="carousel-slide active">
+                <img src="assets/images/slide1.png" alt="IT Conference Video Call Meeting" class="hero-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/slide2.png" alt="Customer Support Center Workspace" class="hero-image">
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/images/slide3.png" alt="Boardroom Team Collaborating with Dashboard Screen" class="hero-image">
+              </div>
+            </div>
+            
+            <!-- Controls -->
+            <button class="carousel-control prev" id="carouselPrev" aria-label="Previous slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-control next" id="carouselNext" aria-label="Next slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator-dot active" data-slide="0"></span>
+              <span class="indicator-dot" data-slide="1"></span>
+              <span class="indicator-dot" data-slide="2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Quick Stats -->
+    <section class="stats-section">
+      <div class="container stats-container">
+        <div class="stat-card">
+          <h3 class="stat-number">100%</h3>
+          <p class="stat-label">Satisfaction Guarantee</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">11+</h3>
+          <p class="stat-label">Core IT Solutions</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">Qatar</h3>
+          <p class="stat-label">Technology Pioneers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-offset">
+      <div class="container about-container">
+        <div class="about-image-side">
+          <div class="about-carousel" id="aboutCarousel">
+            <div class="about-carousel-inner">
+              <div class="about-carousel-slide active">
+                <img src="assets/images/prod1.jpg" alt="Custom Corporate Uniforms" class="about-image">
+                <div class="about-carousel-caption">Custom Uniforms</div>
+              </div>
+              <div class="about-carousel-slide">
+                <img src="assets/images/prod2.jpg" alt="Industrial Electrical Supplies" class="about-image">
+                <div class="about-carousel-caption">Electrical Supplies</div>
+              </div>
+              <div class="about-carousel-slide">
+                <img src="assets/images/prod3.jpg" alt="Corporate Branding & Printing" class="about-image">
+                <div class="about-carousel-caption">Branding & Printing</div>
+              </div>
+            </div>
+            
+            <!-- Controls -->
+            <button class="about-carousel-control prev" id="aboutCarouselPrev" aria-label="Previous slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="about-carousel-control next" id="aboutCarouselNext" aria-label="Next slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            
+            <div class="experience-card">
+              <span class="exp-title">Corporate Quality</span>
+              <span class="exp-desc">Trading &amp; IT Solutions</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-side">
+          <span class="badge">Who We Are</span>
+          <h2>Empowering Businesses with Cutting-Edge Solutions</h2>
+          <p class="lead-text">Qubexe Technology & Solutions is a premier Qatar technology company that provides IT Solutions, Software Solutions, and Trading Services to a range of businesses.</p>
+          <p>We offer a unique combination of expertise and experience that allows us to provide solutions tailored to the specific needs of our clients. We are committed to providing quality products and services that meet the needs of our customers.</p>
+          <p>Whether you're looking for high-end IT systems, structured cabling, bespoke software, or specialized trading divisions (including customized printing, uniform supplies, safety, sanitary, and electrical items), our team of experts is ready to help you achieve your goals.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100% Client-Tailored Architectures</span>
+            </div>
+            <div class="feature-item">
+              <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>24/7 Operations Support &amp; Integration</span>
+            </div>
+            <div class="feature-item">
+              <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Vast Hardware &amp; Cable Inventory Network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Why Choose Qubexe Section -->
+    <section id="why-choose-us" class="why-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Our Core Strength</span>
+          <h2>Why Choose Qubexe?</h2>
+          <p class="section-description">We combine technical ingenuity, extensive industry experience in Qatar, and rigorous safety compliance to deliver robust enterprise solutions.</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1: Experience -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="why-card-title">Extensive Industry Experience</h3>
+            <p class="why-card-desc">With years of dedicated execution in Qatar, we understand the local architectural, electrical, and cybersecurity landscape, translating it into reliable project engineering.</p>
+            <div class="why-badge-group">
+              <span class="why-mini-badge">Years of Execution</span>
+              <span class="why-mini-badge">Certified Engineers</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Regulatory Compliance -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="why-card-title">Rigorous Standards &amp; MOI Approval</h3>
+            <p class="why-card-desc">Our CCTV camera systems, structured cabling, and safety deployments strictly comply with MOI-SSD directives, Kahramaa regulations, and international OSHA safety rules.</p>
+            <div class="why-badge-group">
+              <span class="why-mini-badge">MOI-SSD Compliant</span>
+              <span class="why-mini-badge">Kahramaa Standard</span>
+            </div>
+          </div>
+
+          <!-- Card 3: End-to-End Turnkey Delivery -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            </div>
+            <h3 class="why-card-title">Turnkey Solutions &amp; AMC Support</h3>
+            <p class="why-card-desc">We offer complete lifecycle execution: from customized planning and cabling blueprints to full installation, certified fluke testing, and Annual Maintenance Contracts (AMC).</p>
+            <div class="why-badge-group">
+              <span class="why-mini-badge">End-to-End Care</span>
+              <span class="why-mini-badge">AMC Maintenance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Our Solutions</span>
+          <h2>Comprehensive Enterprise Services</h2>
+          <p class="section-description">We design, configure, and maintain advanced systems to keep your business connected, secure, and running smoothly.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Cabling -->
+          <div class="service-card" data-service="cabling">
+            <div class="card-image-header">
+              <img src="assets/images/cabling.png" alt="Network & Structured Cabling">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Network & Cabling Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-4"/><path d="M12 6V2"/><rect width="8" height="6" x="8" y="6" rx="1"/><rect width="18" height="6" x="3" y="12" rx="1"/><path d="M5 18v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1"/></svg>
+                </div>
+                <h3 class="service-title">Network &amp; Structured Cabling</h3>
+              </div>
+              <div class="service-body">
+                <p>Scale your managed data centers to meet customer demands with stable cabling infrastructures. We plan, configure, and install systems properly to eliminate performance-degrading tangles and ensure high availability.</p>
+              
+              <button class="btn-read-more" data-target="cabling">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 2: CCTV -->
+          <div class="service-card" data-service="cctv">
+            <div class="card-image-header">
+              <img src="assets/images/cctv.png" alt="Closed Circuit Television (CCTV)">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- CCTV Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/><path d="m19 11-3.5 3.5"/></svg>
+                </div>
+                <h3 class="service-title">Closed Circuit Television (CCTV)</h3>
+              </div>
+              <div class="service-body">
+                <p>Deter intruders, curb crime, and protect your physical premises. Our advanced CCTV solutions offer smart features, including real-time mobile monitoring, high-definition recordings, motion detection, and instant email alerts.</p>
+              
+              <button class="btn-read-more" data-target="cctv">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Access Control -->
+          <div class="service-card" data-service="access">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Access Control Systems">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Access Control Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                </div>
+                <h3 class="service-title">Access Control Systems</h3>
+              </div>
+              <div class="service-body">
+                <p>Ensure security and prevent unauthorized entry with modern access control integrations. Crucial for modern digital security, we implement keyless entries, biometric scans, and detailed audit trails to protect assets.</p>
+              
+              <button class="btn-read-more" data-target="access">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Public Address -->
+          <div class="service-card" data-service="pa">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=600&q=80" alt="Public Address & Audio-Visual">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Public Address Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                </div>
+                <h3 class="service-title">Public Address &amp; Audio-Visual</h3>
+              </div>
+              <div class="service-body">
+                <p>Deploy robust speaker networks to amplify sound and distribute messages across large public areas or meeting halls. We deliver clear microphone, amplifier, and loudspeaker integrations for premium acoustic design.</p>
+              
+              <button class="btn-read-more" data-target="pa">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 5: SMATV / IPTV -->
+          <div class="service-card" data-service="smatv">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=600&q=80" alt="SMATV & IPTV Networks">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- SMATV Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="18" y2="21"/><path d="m10 8 5 3-5 3Z"/></svg>
+                </div>
+                <h3 class="service-title">SMATV &amp; IPTV Networks</h3>
+              </div>
+              <div class="service-body">
+                <p>Distribute satellite signals and high-definition television content to multiple endpoints synchronously. We design state-of-the-art IPTV/SMATV distribution networks utilizing high-bandwidth coaxial and fiber systems.</p>
+              
+              <button class="btn-read-more" data-target="smatv">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Wireless Networks -->
+          <div class="service-card" data-service="wireless">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80" alt="Wireless Network Solutions">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Wireless Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M8.5 16.5c3.5-3.5 8.5-3.5 12 0"/><path d="M5 13a12 12 0 0 1 18 0"/><path d="M1.5 9.5a17 17 0 0 1 24 0"/></svg>
+                </div>
+                <h3 class="service-title">Wireless Network Solutions</h3>
+              </div>
+              <div class="service-body">
+                <p>Eliminate physical bottlenecks with enterprise-grade wireless networks. We guarantee seamless connectivity, strong coverage distribution, high-speed roaming, and encrypted protocols for corporate and villa projects.</p>
+              
+              <button class="btn-read-more" data-target="wireless">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Power Backup -->
+          <div class="service-card" data-service="ups">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Power Backup (UPS) Solutions">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Power Backup Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><line x1="9" x2="15" y1="6" y2="6"/><line x1="9" x2="15" y1="10" y2="10"/><path d="M12 14v4"/></svg>
+                </div>
+                <h3 class="service-title">Power Backup (UPS) Solutions</h3>
+              </div>
+              <div class="service-body">
+                <p>Keep your critical IT infrastructure running uninterrupted through blackouts. We provide automated, energy-efficient Uninterruptible Power Supply (UPS) installations custom-scaled for homes, offices, or large data centers.</p>
+              
+              <button class="btn-read-more" data-target="ups">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 8: IT Hardware -->
+          <div class="service-card" data-service="hardware">
+            <div class="card-image-header">
+              <img src="assets/images/hardware.png" alt="IT Hardware Solutions">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- IT Hardware Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 15h3"/><path d="M1 9h3"/><path d="M1 15h3"/></svg>
+                </div>
+                <h3 class="service-title">IT Hardware Solutions</h3>
+              </div>
+              <div class="service-body">
+                <p>Equip your team with durable, top-tier hardware. We source, configure, and maintain certified workstations, enterprise servers, graphics cards, hard drives, and network controllers with long-lasting quality warranties.</p>
+              
+              <button class="btn-read-more" data-target="hardware">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 9: PBX Systems -->
+          <div class="service-card" data-service="pbx">
+            <div class="card-image-header">
+              <img src="assets/images/pbx.png" alt="PBX Telephony Systems">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- PBX Systems Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <h3 class="service-title">PBX Telephony Systems</h3>
+              </div>
+              <div class="service-body">
+                <p>Deploy pioneering communication and unified voice routing systems. We set up robust analog, digital, and VoIP PBX setups tailored for growing startups, dynamic call centers, and multi-branch enterprise networks.</p>
+              
+              <button class="btn-read-more" data-target="pbx">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 10: Data Center -->
+          <div class="service-card" data-service="datacenter">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?auto=format&fit=crop&w=600&q=80" alt="Complete Data Center Solutions">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Data Center Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="3" rx="2"/><rect width="20" height="8" x="2" y="13" rx="2"/><line x1="6" x2="6.01" y1="7" y2="7"/><line x1="6" x2="6.01" y1="17" y2="17"/></svg>
+                </div>
+                <h3 class="service-title">Complete Data Center Solutions</h3>
+              </div>
+              <div class="service-body">
+                <p>Complex engineering structures built to process, store, and manage your critical data. We handle structural design, cooling, precision UPS setups, gas-based fire suppression systems, and access controls for absolute uptime.</p>
+              
+              <button class="btn-read-more" data-target="datacenter">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 11: Home Automation -->
+          <div class="service-card" data-service="automation">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80" alt="Office & Villa Automation">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Home Automation Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3 class="service-title">Office &amp; Villa Automation</h3>
+              </div>
+              <div class="service-body">
+                <p>Experience extreme comfort, security, and eco-friendly energy management. Our automation integrates light, thermal comfort, climate schedules, audio systems, and blinds into intuitive panel and mobile control interfaces.</p>
+              
+              <button class="btn-read-more" data-target="automation">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Products Showcase Section -->
+    <section id="products" class="products-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Trading Division</span>
+          <h2>Custom Products &amp; Commercial Supplies</h2>
+          <p class="section-description">Beyond IT infrastructure, we supply a vast inventory of commercial hardware, safety equipment, sanitary wear, and custom uniforms across Qatar.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Uniforms -->
+          <div class="product-card" data-service="trading">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80" alt="Customized Uniforms">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Shirt / Apparel Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 7.83V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v4.83L3.62 3.46a1 1 0 0 0-1.4 1.42l4 4a1 1 0 0 0 .7.3H8v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V9.18h.09a1 1 0 0 0 .7-.3l4-4a1 1 0 0 0-1.41-1.42z"/></svg>
+                </div>
+                <h3 class="service-title">Customized Uniforms</h3>
+              </div>
+              <div class="service-body">
+                <p>Tailor-made uniforms for corporates, retail staffs, security teams, and schools. We utilize comfortable, heavy-duty fabrics styled with custom colors, sizes, embroidery, and printed logo setups.</p>
+              
+              <button class="btn-read-more" data-target="uniforms">Read More &rarr;</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Printing -->
+          <div class="product-card" data-service="trading">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" alt="Printing & Advertising">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Printer / Graphic Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                </div>
+                <h3 class="service-title">Printing &amp; Advertising</h3>
+              </div>
+              <div class="service-body">
+                <p>Professional offset and digital printing for all company assets. From high-resolution marketing brochures, brochures, custom corporate banners, cards, flyers, and branded office stationeries.</p>
+              </div>
+              <button class="btn-read-more" data-target="printing">Read More &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Sanitary Wear -->
+          <div class="product-card" data-service="trading">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Sanitary Wear & Hygiene">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Sanitary / Droplet Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/></svg>
+                </div>
+                <h3 class="service-title">Sanitary Wear &amp; Hygiene</h3>
+              </div>
+              <div class="service-body">
+                <p>Bulk toilet paper supplies, soap, dispensers, cleaning solutions, and heavy-duty bathroom fittings. We design and deliver sanitary inventories for corporate offices and commercial sites.</p>
+              </div>
+              <button class="btn-read-more" data-target="sanitary">Read More &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 4: Hand Tools -->
+          <div class="product-card" data-service="trading">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Hand Tools & Hardware">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Hammer / Wrench Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 22 1-1 3-3 3-3"/><path d="M14 14.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M15 14a9 9 0 0 1 7.2-7.2L20.4 5c-.7-.7-.7-1.8 0-2.4l1.2-1.2c.4-.4.4-1 0-1.4l-3-3c-.4-.4-1-.4-1.4 0l-1.2 1.2c-.7.7-1.8.7-2.4 0L11.8 0A9 9 0 0 1 15 14z"/></svg>
+                </div>
+                <h3 class="service-title">Hand Tools &amp; Hardware</h3>
+              </div>
+              <div class="service-body">
+                <p>High-grade construction hand tools, metal hardware fittings, fasteners, measuring devices, and mechanical supplies. Certified and sourced directly from international machinery brands.</p>
+              </div>
+              <button class="btn-read-more" data-target="tools">Read More &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 5: Safety Gear -->
+          <div class="product-card" data-service="trading">
+            <div class="card-image-header">
+              <img src="assets/images/safety.png" alt="Industrial Safety Items">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Safety Shield Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="service-title">Industrial Safety Items</h3>
+              </div>
+              <div class="service-body">
+                <p>Protect your personnel on site. We provide high-visibility jackets, certified safety shoes, helmets, impact gloves, fire hazard signs, first-aid systems, and complete protective kits.</p>
+              </div>
+              <button class="btn-read-more" data-target="safety">Read More &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 6: Electrical Supplies -->
+          <div class="product-card" data-service="trading">
+            <div class="card-image-header">
+              <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=600&q=80" alt="Electrical Components">
+            </div>
+            <div class="card-text-wrapper">
+              <div class="service-header">
+                <div class="service-icon-box">
+                  <!-- Lightning / Zap Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <h3 class="service-title">Electrical Components</h3>
+              </div>
+              <div class="service-body">
+                <p>Commercial cables, light fixtures, electrical switches, sockets, safety circuit breakers, panels, and distribution joints matching rigorous local QCS standards.</p>
+              </div>
+              <button class="btn-read-more" data-target="electrical">Read More &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Enquiry Form Section -->
+    <section id="contact" class="contact-section scroll-offset">
+      <div class="container contact-container">
+        <div class="contact-info-side">
+          <span class="badge">Stay Connected</span>
+          <h2>Ready to transform your IT environment?</h2>
+          <p>Get in touch with our engineering team today to receive a customized technical assessment and quote.</p>
+          
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="detail-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Our Location</h4>
+                <p>PO Box - 2621, Salwa Road, Doha, Qatar</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Call Us</h4>
+                <p><a href="tel:+97444820586">+974 44820586</a> / <a href="tel:+97450372322">+974 50372322</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Email Us</h4>
+                <p><a href="mailto:info@qubexe.com">info@qubexe.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Qubexe Logo" class="footer-logo">
+        <p>Your go-to source for IT Solutions, Software Solutions, and Trading Services with 100% satisfaction guaranteed.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">IT Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">IT &amp; Cabling</a></li>
+          <li><a href="#services">Security &amp; CCTV</a></li>
+          <li><a href="#services">PBX &amp; Automation</a></li>
+          <li><a href="#services">Data Centers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-products">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">Custom Uniforms</a></li>
+          <li><a href="#products">Printing &amp; Ads</a></li>
+          <li><a href="#products">Safety &amp; Hardware</a></li>
+          <li><a href="#products">Electrical Items</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Connect Directly</h4>
+        <p>Salwa Road, Doha, Qatar</p>
+        <p>PO Box - 2621</p>
+        <p>Email: <a href="mailto:info@qubexe.com">info@qubexe.com</a></p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Qubexe Technology & Solutions. All rights reserved.</p>
+      <div class="footer-credit">Stay Connected With Us</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Access (Brand Themed, Generic Icon) -->
+  <a href="https://wa.me/97450372322" class="whatsapp-float-custom" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+    <span class="whatsapp-tooltip-custom">WhatsApp Chat</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <!-- Search Overlay Modal -->
+  <div id="searchOverlay" class="search-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="search-modal-card">
+      <div class="search-modal-header">
+        <div class="search-input-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-input-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" placeholder="Search services or products (e.g. Cabling, Uniforms)..." autocomplete="off">
+        </div>
+        <button id="searchCloseBtn" class="search-close-btn" aria-label="Close search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      </div>
+      
+      <div class="search-modal-body">
+        <!-- Popular Suggestions -->
+        <div class="search-suggestions" id="searchSuggestions">
+          <span class="suggestion-label">Popular:</span>
+          <button class="suggestion-tag">Cabling</button>
+          <button class="suggestion-tag">CCTV</button>
+          <button class="suggestion-tag">Uniforms</button>
+          <button class="suggestion-tag">Software</button>
+          <button class="suggestion-tag">Electrical</button>
+        </div>
+        
+        <!-- Live Results -->
+        <div class="search-results-container" id="searchResultsContainer">
+          <div class="search-empty-state" id="searchEmptyState">
+            <p>Start typing to search for services and products...</p>
+          </div>
+          <div class="search-results-list" id="searchResultsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script type="module" src="/src/main.js"></script>
+  <div id="detailsModal" class="details-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="details-modal-card">
+      <button id="modalCloseIcon" class="modal-close-icon" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="details-modal-grid">
+        <div class="details-modal-left">
+          <img id="modalImage" src="" alt="Detail Banner" class="details-modal-image">
+        </div>
+        <div class="details-modal-right">
+          <div class="details-modal-content">
+            <h3 id="modalTitle" class="details-modal-title"></h3>
+            <p id="modalDescription" class="details-modal-desc"></p>
+            
+            <h4 class="details-features-heading">Key Features &amp; Benefits</h4>
+            <ul id="modalFeatures" class="details-modal-features">
+              <!-- Filled dynamically by JavaScript -->
+            </ul>
+            
+            <div class="details-modal-actions">
+              <button id="modalCloseBtn" class="details-modal-close-btn">Close Details</button>
+              <a id="modalWhatsAppBtn" href="" target="_blank" rel="noopener noreferrer" class="details-modal-whatsapp-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                Inquire on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
