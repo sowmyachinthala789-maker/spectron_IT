@@ -535,7 +535,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     ups: {
       title: "Power Backup (UPS) Solutions",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80",
+      image: "assets/images/ups.png",
       description: "Keep critical network servers, databases, and CCTV surveillance systems running uninterrupted through electrical fluctuations and grid blackouts. Sized precisely for homes and corporate sites.",
       features: [
         "Uninterruptible Power Supply (UPS) cabinets with intelligent charge",
