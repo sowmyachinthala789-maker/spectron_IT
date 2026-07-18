@@ -242,13 +242,38 @@ a {
 }
 
 /* Force navbar text and icons to remain light for dark background contrast */
-.navbar .nav-link {
-  color: #9ca3af !important;
+@media (min-width: 992px) {
+  .navbar .nav-link {
+    color: #e5e7eb !important;
+  }
+  .navbar .nav-link:hover, 
+  .navbar .nav-link.active {
+    color: #ffffff !important;
+  }
+  .navbar .dropdown-caret-btn {
+    color: #e5e7eb !important;
+  }
+  .navbar .nav-item.dropdown.open .dropdown-caret-btn,
+  .navbar .dropdown-caret-btn:hover {
+    color: var(--primary) !important;
+  }
 }
 
-.navbar .nav-link:hover, 
-.navbar .nav-link.active {
-  color: #ffffff !important;
+@media (max-width: 991px) {
+  .navbar .nav-link {
+    color: var(--text-main) !important;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: var(--primary) !important;
+  }
+  .navbar .dropdown-caret-btn {
+    color: var(--text-muted) !important;
+  }
+  .navbar .nav-item.dropdown.open .dropdown-caret-btn,
+  .navbar .dropdown-caret-btn:hover {
+    color: var(--primary) !important;
+  }
 }
 
 .navbar .theme-toggle-btn,
@@ -2486,6 +2511,25 @@ a {
   .nav-item.dropdown:hover .dropdown-caret,
   .nav-item.dropdown.open .dropdown-caret {
     transform: rotate(180deg);
+  }
+
+  /* Desktop specific dropdown menu white theme override */
+  .dropdown-menu {
+    background: #ffffff !important;
+    border-color: #e5e7eb !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+  }
+  .dropdown-menu::before {
+    border-color: transparent transparent #ffffff transparent !important;
+  }
+  .dropdown-item {
+    color: #1a202c !important;
+    font-weight: 600 !important;
+  }
+  .dropdown-item:hover {
+    color: var(--primary) !important;
+    background: rgba(255, 77, 0, 0.05) !important;
+    border-left-color: var(--primary) !important;
   }
 }
 
