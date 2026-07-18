@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('themeToggle');
   const htmlElement = document.documentElement;
 
-  // Retrieve saved theme or default to dark
-  const currentTheme = localStorage.getItem('theme') || 'dark';
+  // Retrieve saved theme or default to light
+  const currentTheme = localStorage.getItem('theme') || 'light';
   htmlElement.setAttribute('data-theme', currentTheme);
 
   themeToggle.addEventListener('click', () => {
