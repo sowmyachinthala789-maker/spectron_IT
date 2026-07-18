@@ -49,8 +49,46 @@
       <nav class="nav-menu" id="navMenu">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About Us</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#products" class="nav-link">Products</a>
+        
+        <div class="nav-item dropdown">
+          <div class="nav-link-wrapper">
+            <a href="#services" class="nav-link">Services</a>
+            <button class="dropdown-caret-btn" id="servicesDropdownBtn" aria-label="Toggle services dropdown">
+              <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+          <div class="dropdown-menu">
+            <a href="#service-cabling" class="dropdown-item">Structured Cabling</a>
+            <a href="#service-cctv" class="dropdown-item">CCTV Surveillance</a>
+            <a href="#service-access" class="dropdown-item">Access Control Systems</a>
+            <a href="#service-pa" class="dropdown-item">Public Address &amp; AV</a>
+            <a href="#service-smatv" class="dropdown-item">SMATV &amp; IPTV Networks</a>
+            <a href="#service-wireless" class="dropdown-item">Wireless Network Solutions</a>
+            <a href="#service-ups" class="dropdown-item">Power Backup (UPS) Solutions</a>
+            <a href="#service-hardware" class="dropdown-item">IT Hardware Solutions</a>
+            <a href="#service-pbx" class="dropdown-item">PBX Telephony Systems</a>
+            <a href="#service-datacenter" class="dropdown-item">Complete Data Center Solutions</a>
+            <a href="#service-automation" class="dropdown-item">Office &amp; Villa Automation</a>
+          </div>
+        </div>
+        
+        <div class="nav-item dropdown">
+          <div class="nav-link-wrapper">
+            <a href="#products" class="nav-link">Products</a>
+            <button class="dropdown-caret-btn" id="productsDropdownBtn" aria-label="Toggle products dropdown">
+              <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+          <div class="dropdown-menu">
+            <a href="#product-uniforms" class="dropdown-item">Customized Uniforms</a>
+            <a href="#product-printing" class="dropdown-item">Printing &amp; Advertising</a>
+            <a href="#product-sanitary" class="dropdown-item">Sanitary Wear &amp; Hygiene</a>
+            <a href="#product-hardware" class="dropdown-item">Hand Tools &amp; Hardware</a>
+            <a href="#product-safety" class="dropdown-item">Industrial Safety Items</a>
+            <a href="#product-electrical" class="dropdown-item">Electrical Components</a>
+          </div>
+        </div>
+
         <a href="#contact" class="nav-link">Contact Us</a>
       </nav>
 
@@ -242,10 +280,9 @@
           <!-- Card 3: End-to-End Turnkey Delivery -->
           <div class="why-card">
             <div class="why-icon-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="rgba(255, 77, 0, 0.1)"/>
-                <circle cx="10" cy="10" r="3" fill="rgba(255, 77, 0, 0.15)"/>
-                <path d="m12 12 5 5M16 14l1.5 1.5M14.5 15.5l1.5 1.5"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" fill="rgba(255, 77, 0, 0.15)"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
               </svg>
             </div>
             <h3 class="why-card-title">Turnkey Solutions &amp; AMC Support</h3>
@@ -270,7 +307,7 @@
 
         <div class="services-grid">
           <!-- Card 1: Cabling -->
-          <div class="service-card" data-service="cabling">
+          <div class="service-card" data-service="cabling" id="service-cabling">
             <div class="card-image-header">
               <img src="assets/images/cabling.png" alt="Network & Structured Cabling">
             </div>
@@ -291,7 +328,7 @@
           </div>
 
           <!-- Card 2: CCTV -->
-          <div class="service-card" data-service="cctv">
+          <div class="service-card" data-service="cctv" id="service-cctv">
             <div class="card-image-header">
               <img src="assets/images/cctv.png" alt="Closed Circuit Television (CCTV)">
             </div>
@@ -312,7 +349,7 @@
           </div>
 
           <!-- Card 3: Access Control -->
-          <div class="service-card" data-service="access">
+          <div class="service-card" data-service="access" id="service-access">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Access Control Systems">
             </div>
@@ -333,7 +370,7 @@
           </div>
 
           <!-- Card 4: Public Address -->
-          <div class="service-card" data-service="pa">
+          <div class="service-card" data-service="pa" id="service-pa">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=600&q=80" alt="Public Address & Audio-Visual">
             </div>
@@ -354,7 +391,7 @@
           </div>
 
           <!-- Card 5: SMATV / IPTV -->
-          <div class="service-card" data-service="smatv">
+          <div class="service-card" data-service="smatv" id="service-smatv">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=600&q=80" alt="SMATV & IPTV Networks">
             </div>
@@ -375,7 +412,7 @@
           </div>
 
           <!-- Card 6: Wireless Networks -->
-          <div class="service-card" data-service="wireless">
+          <div class="service-card" data-service="wireless" id="service-wireless">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80" alt="Wireless Network Solutions">
             </div>
@@ -396,7 +433,7 @@
           </div>
 
           <!-- Card 7: Power Backup -->
-          <div class="service-card" data-service="ups">
+          <div class="service-card" data-service="ups" id="service-ups">
             <div class="card-image-header">
               <img src="assets/images/ups.png" alt="Power Backup (UPS) Solutions">
             </div>
@@ -417,7 +454,7 @@
           </div>
 
           <!-- Card 8: IT Hardware -->
-          <div class="service-card" data-service="hardware">
+          <div class="service-card" data-service="hardware" id="service-hardware">
             <div class="card-image-header">
               <img src="assets/images/hardware.png" alt="IT Hardware Solutions">
             </div>
@@ -438,7 +475,7 @@
           </div>
 
           <!-- Card 9: PBX Systems -->
-          <div class="service-card" data-service="pbx">
+          <div class="service-card" data-service="pbx" id="service-pbx">
             <div class="card-image-header">
               <img src="assets/images/pbx.png" alt="PBX Telephony Systems">
             </div>
@@ -459,7 +496,7 @@
           </div>
 
           <!-- Card 10: Data Center -->
-          <div class="service-card" data-service="datacenter">
+          <div class="service-card" data-service="datacenter" id="service-datacenter">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?auto=format&fit=crop&w=600&q=80" alt="Complete Data Center Solutions">
             </div>
@@ -480,7 +517,7 @@
           </div>
 
           <!-- Card 11: Home Automation -->
-          <div class="service-card" data-service="automation">
+          <div class="service-card" data-service="automation" id="service-automation">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80" alt="Office & Villa Automation">
             </div>
@@ -515,7 +552,7 @@
 
         <div class="services-grid">
           <!-- Card 1: Uniforms -->
-          <div class="product-card" data-service="trading">
+          <div class="product-card" data-service="trading" id="product-uniforms">
             <div class="card-image-header">
               <img src="assets/images/uniforms.png" alt="Customized Uniforms">
             </div>
@@ -536,7 +573,7 @@
           </div>
 
           <!-- Card 2: Printing -->
-          <div class="product-card" data-service="trading">
+          <div class="product-card" data-service="trading" id="product-printing">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" alt="Printing & Advertising">
             </div>
@@ -556,7 +593,7 @@
           </div>
 
           <!-- Card 3: Sanitary Wear -->
-          <div class="product-card" data-service="trading">
+          <div class="product-card" data-service="trading" id="product-sanitary">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Sanitary Wear & Hygiene">
             </div>
@@ -576,7 +613,7 @@
           </div>
 
           <!-- Card 4: Hand Tools -->
-          <div class="product-card" data-service="trading">
+          <div class="product-card" data-service="trading" id="product-hardware">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Hand Tools & Hardware">
             </div>
@@ -596,7 +633,7 @@
           </div>
 
           <!-- Card 5: Safety Gear -->
-          <div class="product-card" data-service="trading">
+          <div class="product-card" data-service="trading" id="product-safety">
             <div class="card-image-header">
               <img src="assets/images/safety.png" alt="Industrial Safety Items">
             </div>
@@ -616,7 +653,7 @@
           </div>
 
           <!-- Card 6: Electrical Supplies -->
-          <div class="product-card" data-service="trading">
+          <div class="product-card" data-service="trading" id="product-electrical">
             <div class="card-image-header">
               <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=600&q=80" alt="Electrical Components">
             </div>

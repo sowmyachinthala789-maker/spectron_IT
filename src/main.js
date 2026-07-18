@@ -808,6 +808,70 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoSlide();
   }
 
+  /* ==================================================
+   * Navigation Dropdowns Dynamic Behavior
+   * ================================================== */
+  // Dropdown caret triggers (handles clicking on the caret arrow icon button)
+  const dropdownCarets = document.querySelectorAll('.dropdown-caret-btn');
+  dropdownCarets.forEach(caret => {
+    caret.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const parent = caret.closest('.dropdown');
+      
+      // Close other dropdowns
+      document.querySelectorAll('.nav-item.dropdown').forEach(d => {
+        if (d !== parent) d.classList.remove('open');
+      });
+      
+      parent.classList.toggle('open');
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item.dropdown').forEach(d => {
+      d.classList.remove('open');
+    });
+  });
+
+  // Dropdown item smooth scroll & flash highlight
+  const dropdownItems = document.querySelectorAll('.dropdown-item');
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      const targetId = item.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        
+        // Close dropdown menu container
+        const dropdown = item.closest('.dropdown');
+        if (dropdown) dropdown.classList.remove('open');
+        
+        // Close mobile drawer if open
+        const navMenu = document.getElementById('navMenu');
+        const burgerBtn = document.getElementById('burgerBtn');
+        if (navMenu && navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          if (burgerBtn) burgerBtn.classList.remove('active');
+        }
+        
+        // Scroll smoothly with offset
+        const yOffset = -90; // height of fixed navbar with clearance
+        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        
+        // Trigger flash highlight
+        setTimeout(() => {
+          targetElement.classList.add('highlight-flash');
+          setTimeout(() => {
+            targetElement.classList.remove('highlight-flash');
+          }, 1500);
+        }, 850);
+      }
+    });
+  });
+
 });
 
 // Extra dynamic highlight helper styles
