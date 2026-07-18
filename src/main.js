@@ -597,7 +597,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Products
     uniforms: {
       title: "Customized Uniforms",
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80",
+      image: "assets/images/uniforms.png",
       description: "Tailor-made uniforms designed to reflect your brand's corporate identity. We utilize comfortable, breathable, and highly durable fabrics engineered for demanding work environments in Qatar.",
       features: [
         "Corporate suits, office shirts, trousers, and custom blazers",
